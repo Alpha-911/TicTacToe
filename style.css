@@ -1,0 +1,141 @@
+@import url('https://fonts.googleapis.com/css2?family=Kumar+One&family=Madimi+One&family=Oswald:wght@200..700&family=Rubik+Glitch+Pop&family=Titillium+Web:ital,wght@0,200;0,300;0,400;0,600;0,700;0,900;1,200;1,300;1,400;1,600;1,700&display=swap');
+
+body
+{
+    height: 100vh;
+    display: flex;
+    flex-flow: column;
+    margin: 0;
+}
+
+.box
+{
+    position: relative;
+    margin: auto;
+    height: 30vmax;
+    width: 30vmax;
+    display: flex;
+    flex-flow: column;
+}
+.row
+{
+    height: 10vmax;
+    width: 30vmax;
+    display: flex;
+    flex-flow: row;
+}
+
+.cell
+{
+    position: relative;
+    height: 10vmax;
+    width: 10vmax;
+    display: flex;
+    flex-flow: column;
+    background: none;
+    cursor: pointer;
+    align-items: center;
+    justify-content: center;
+    z-index: 2;
+}
+.r2
+{
+    border-bottom: 2px solid black;
+    border-top: 2px solid black;
+}
+
+.r1c2,
+.r2c2,
+.r3c2
+{
+    border-right: 2px solid black;
+    border-left: 2px solid black;
+}
+
+.cell:hover,
+.cell:active
+{
+    background: #ffe5ff;
+}
+
+.mark
+{
+    visibility: hidden;
+    position: absolute;
+    font-family: "Titillium Web", sans-serif;
+    font-weight: 200;
+    font-style: normal;
+    font-size: 6rem;
+}
+
+/*Strikes-------------------------------------------------------------------------------------------*/
+.strikes
+{
+    display: flex;
+    align-self: center;
+    position: absolute;
+    height: 100%;
+    width: 100%;
+    justify-content: center;
+    align-items: center;
+}
+.strike
+{
+    width: 3px;
+    height: 100%;
+    background: #ff0000;
+}
+.strikes-r,
+.strikes-c,
+.strikes-d
+{
+    visibility: hidden;
+    display: flex;
+    position: absolute;
+    height: 100%;
+    width: 67%;
+    justify-content: space-between;
+}
+.strikes-r
+{
+    rotate: 90deg;
+}
+.strikes-d
+{
+    height: 100%;
+    width: 100%;
+    rotate: 45deg;
+    justify-content: center;
+}
+.d-backward {
+    rotate: 90deg;
+    left: 0;
+}
+/*--------------------------------------------------------------------------------------------------*/
+
+.button
+{
+    margin: 4vmax auto;
+}
+
+.button button
+{
+    height: 5vmax;
+    width: 10vmax;
+    background: #cecece;
+    border: none;
+    border-radius: 40px;
+    color: #4d4d4d;
+    font-family: "Titillium Web", sans-serif;
+    font-weight: bold;
+    font-style: normal;
+    font-size: 1.5vmax;
+    cursor: pointer;
+}
+
+.button button:hover,
+.button button:active
+{
+    box-shadow: 0 4px 50px #fdfd00;
+    background: #fdfd00;
+}
