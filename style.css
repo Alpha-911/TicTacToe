@@ -154,4 +154,9 @@ body
     {
         background: none;
     }
+
+    .button
+    {
+        margin: 15vmax auto;
+    }
 }
