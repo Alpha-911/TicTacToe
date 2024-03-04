@@ -140,7 +140,7 @@ body
     box-shadow: 0 4px 50px #fdfd00;
     background: #fdfd00;
 }
-@media (min-width: 360px)
+@media (max-width: 1000px)
 {
     .button button:hover,
     .button button:active
