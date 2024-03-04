@@ -36,7 +36,7 @@ body
     cursor: pointer;
     align-items: center;
     justify-content: center;
-    z-index: 2;
+    z-index: 1;
 }
 .r2
 {
@@ -84,6 +84,7 @@ body
     width: 3px;
     height: 100%;
     background: #ff0000;
+    z-index: 3;
 }
 .strikes-r,
 .strikes-c,
@@ -138,4 +139,19 @@ body
 {
     box-shadow: 0 4px 50px #fdfd00;
     background: #fdfd00;
+}
+@media (min-width: 360px)
+{
+    .button button:hover,
+    .button button:active
+    {
+        box-shadow: none;
+        background: #cecece;
+    }
+
+    .cell:hover,
+    .cell:active
+    {
+        background: none;
+    }
 }
